@@ -1,0 +1,258 @@
+<! DOCTYPE html>
+< html >
+< cabeza >
+	< título >: P </ título >
+	< meta  charset = " utf-8 " >
+	< meta  name = " viewport "  content = " width = device-width, initial-scale = 1.0 " /> <! - Para optimizar en el navegador móvil ->
+	<! - <link rel = "hoja de estilo" type = "text / css" href = "view / frontend / css / materialize.min.css">
+	<link rel = "hoja de estilo" type = "text / css" href = "view / frontend / css / style.css">
+	<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "hoja de estilo"> ->
+
+  <! - <meta http-equiv = "X-UA-Compatible" content = "ie = edge"> ->
+  <! - fuente impresionante ->
+  < Enlace  rel = " hoja de estilo "  href = " https://use.fontawesome.com/releases/v5.0.13/css/all.css "  integridad = " SHA384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp "  crossorigin = " anónimo " >
+  <! - Importar fuente de icono de Google ->
+  < link  href = " https://fonts.googleapis.com/icon?family=Material+Icons "  rel = " hoja de estilo " >
+  <! - CSS compilado y minificado ->
+  < link  rel = " hoja de estilo "  href = " https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css " >
+
+  < estilo >
+    encabezado {
+      fondo : url ( img / street.jpg );
+      tamaño de fondo : cubierta ; / * Cubrir todo el contenedor * /
+      posición de fondo : centro ;
+      min-altura : 1000 px ;
+    }
+     Pantalla  @media y ( ancho máximo : 670 px ) { / * cambiar cuando pantalla sea de 670 px de ancho o menos * /
+      encabezado {
+        altura min : 500 px ;
+      }
+    }
+    .sección {
+      relleno superior : 4 vw ; / * relleno (espacio entre el borde y su contenido del elemento) del 4% relativo al ancho ventana (Ancho de la ventana gráfica) * /
+      Acolchado inferior : 4 vw ;
+    }
+    / * margen (espacio alrededor del elmento) * /
+    / * relleno (espacio dentro del elmento) * /
+    .tabs  .indicator {
+      color de fondo : # 1a237e ;
+    }
+    .tabs  .tab  a : focus , .tabs  .tab  a : focus .active {
+      fondo : transparente ;
+    }
+  </ estilo >
+
+</ cabeza >
+< cuerpo >
+
+	<! - barra de navegación ->
+  < encabezado >
+    < nav  class = " nav-wrapper transparent " >
+      < div  class = " container " >
+        < Un  href = " # "  clase = " marca-logo " > Empresa </ a >  
+        < Un  href = " # "  clase = " sidenav-trigger "  -destino de los datos = " móvil-menú " >
+          < i  class = " material-icons " > menu </ i >
+        </ a >
+        < ul  class = " hide-on-med-and-down " >
+          < Li > < un  href = " #photos " > Fotos </ una > </ li >
+          < Li > < un  href = " #services " > Servicios </ una > </ li >
+          < Li > < un  href = " #contact " > Contacto </ una > </ li >
+          < Li > < un  href = " ver / login2.php " > Iniciar sesión </ a > </ li >
+          < Li > < un  href = " # "  clase = " tooltipped btn-flotante btn-pequeño índigo oscurecer-4 "  -posición de datos = " parte inferior "  datos-tooltip = " Instagram " >
+            < i  class = " fab fa-instagram " > </ i >
+          </ a > </ li >
+          < Li > < un  href = " # "  clase = " tooltipped btn-flotante btn-pequeño índigo oscurecer-4 "  -posición de datos = " parte inferior "  datos-tooltip = " Instagram " >
+            < i  class = " fab fa-instagram " > </ i >
+          </ a > </ li >
+          < Li > < un  href = " # "  clase = " tooltipped BTN-flotante-BTN pequeña índigo oscurecer-4 "  -posición de datos = " inferior "  datos sobre herramientas = " Facebook " >
+            < i  class = " fab fa-facebook " > </ i >
+          </ a > </ li >
+          < Li > < un  href = " # "  clase = " tooltipped BTN-flotante-BTN pequeña índigo oscurecer-4 "  -posición de datos = " inferior "  datos sobre herramientas = " Twitter " >
+            < i  class = " fab fa-twitter " > </ i >
+          </ a > </ li >
+        </ ul >
+        < ul  class = " sidenav grey lighten-2 "  id = " mobile-menu " >
+          < Li > < un  href = " # " > Fotos </ a > </ li >
+          < Li > < un  href = " # " > Servicios </ a > </ li >
+          < Li > < un  href = " # " > Contacto </ a > </ li >
+        </ ul >
+      </ div >
+    </ nav >
+  </ header >
+
+  <! - foto / cuadrícula ->
+  < section  class = " container section scrollspy "  id = " photos " > <! - contenido centrado y margen, scrollspy: ve el desplazamiento al vincular esta sección ->
+    < div  class = " row " >
+      < div  class = " col s12 l4 " >
+          < img  src = " img / portrait.jpg "  alt = " "  class = " responsive-img materialboxed " >
+      </ div >
+      < div  class = " col s12 l6 offset-l1 " >
+        < h2  class = " indigo-text text-darken-4 " > Retratos </ h2 >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+      </ div >
+    </ div >
+    < div  class = " row " >
+      < div  class = " col s12 l4 offset-l1 push-l7 " >
+          < img  src = " img / city.jpg "  alt = " "  class = " responsive-img materialboxed " >
+      </ div >
+      < div  class = " col s12 l6 offset-l1 pull-l5 alinear a la derecha " >
+        < h2  class = " indigo-text text-darken-4 " > Paisajes urbanos </ h2 >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+      </ div >
+    </ div >
+    < div  class = " row " >
+      < div  class = " col s12 l4 " >
+          < img  src = " img / nature.jpg "  alt = " "  class = " responsive-img materialboxed " >
+      </ div >
+      < div  class = " col s12 l6 offset-l1 " >
+        < h2  class = " indigo-text text-darken-4 " > Nature </ h2 >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+      </ div >
+    </ div >
+  </ section >
+
+  <! - paralaje ->
+  < div  class = " parallax-container " >
+    < div  class = " paralaje " >
+      < img  src = " asset / img / photo1.png "  alt = " "  class = " responsive-img " >
+    </ div >
+  </ div >
+
+  <! - servicios / pestañas ->
+  < section  class = " section container scrollspy "  id = " services " >
+    < div  class = " row " >
+      < div  class = " col s12 l4 " >
+        < h2  class = " indigo-text text-darken-4 " > Qué hacemos ... </ h2 >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+        < p > Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec. </ P >
+      </ div >
+      < div  class = " col s12 l6 offset-l2 " >
+        <! - pestañas ->
+        < ul  class = " tabs " >
+          < li  class = " tab col s6 " >
+            < Un  href = " #photography "  clase = " activo texto-oscurecer-4 indigo-texto " > Fotografía </ una >
+          </ li >
+          < li  class = " tab col s6 " >
+            < Un  href = " #Editing "  clase = " indigo-texto texto-oscurecer-4 " > Edición </ una >
+          </ li >
+        </ ul >
+        < div  id = " photography "  class = " col s12 " >
+            < p  class = " flow-text indigo-text text-darken-4 " > Fotografía </ p >
+            < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+            < p > Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec. </ P >
+        </ div >
+        < div  id = " edit "  class = " col s12 " >
+            < p  class = " flow-text indigo-text text-darken-4 " > Edición </ p >
+            < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+            < p > Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec. </ P >
+        </ div >
+        </ div >
+      </ div >
+    </ div >
+  </ section >
+  <! - paralaje ->
+  < div  class = " parallax-container " >
+    < div  class = " paralaje " >
+      < img  src = " img / stars.jpg "  alt = " "  class = " responsive-img " >
+    </ div >
+  </ div >
+
+  <! - formulario de contacto ->
+  < section  class = " section container scrollspy "  id = " contact " >
+    < div  class = " row " >
+      < div  class = " col s12 l5 " >
+        < h2  class = " indigo-text text-darken-4 " > Contáctanos </ h2 >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+        < p > Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec. </ P >
+        < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+        < p > Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec. </ P >
+      </ div >
+      < div  class = " col s12 l5 offset-l2 " >
+        < formulario >
+          < div  class = " campo de entrada " >
+            < i  class = " prefijo material-iconos " > correo electrónico </ i >
+            < input  type = " email "  id = " email " >
+            < label  for = " email " > Tu correo electrónico </ label >
+          </ div >
+          < div  class = " campo de entrada " >
+            < i  class = " prefijo material-iconos " > mensaje </ i >
+            < textarea  id = " message "  class = " materialize-textarea "  cols = " 20 "  rows = " 20 " > </ textarea >
+            < label  for = " message " > Tu mensaje </ label >
+          </ div >
+          < div  class = " campo de entrada " >
+            < i  class = " prefijo material-iconos " > date_range </ i >
+            < input  type = " text "  id = " date "  class = " datepicker " >
+            < label  for = " date " > Elija una fecha en la que me necesite para ... </ label >
+          </ div >
+          < div  class = " campo de entrada " >
+            < p > Servicios requeridos: </ p >
+            < p >
+              < etiqueta >
+                < input  type = " checkbox " >
+                < span > Fotografía </ span >
+              </ label >
+            </ p >
+            < p >
+              < etiqueta >
+                < input  type = " checkbox " >
+                < span > Edición de fotos </ span >
+              </ label >
+            </ p >
+          </ div >
+          < div  class = " centro de campo de entrada " >
+            < button  class = " btn " > Enviar </ button >
+          </ div >
+        </ form >
+      </ div >
+    </ div >
+  </ section >
+
+  <! - pie de página ->
+  < footer  class = " page-footer gray darken-3 " >
+    < div  class = " container " >
+      < div  class = " row " >
+        < div  class = " col l6 s12 " >
+          < h5 > Acerca de mí </ h5 >
+          < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue. </ P >
+          < p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Portal en lacus congue, suscipit elit nec, tincidunt orci. </ P >
+        </ div >
+        < div  class = " col l4 offset-l2 s12 " >
+          < h5  class = " white-text " > Conectar </ h5 >
+          < ul >
+            < Li > < una  clase = " gris-texto-texto aligerar-3 "  href = " # " > Facebook </ a > </ li >
+            < Li > < una  clase = " gris-texto-texto aligerar-3 "  href = " # " > Twitter </ a > </ li >
+            < Li > < una  clase = " gris-texto-texto aligerar-3 "  href = " # " > Linked In </ a > </ li >
+            < Li > < una  clase = " gris-texto-texto aligerar-3 "  href = " # " > Instagram </ a > </ li >
+          </ ul >
+        </ div >
+      </ div >
+    </ div >
+    < div  class = " footer-copyright grey darken-4 " >
+      < div  class = " container center-align " > & copy ; 2018 Presley Romero </ div >
+    </ div >
+  </ pie de página >
+
+  <! - JavaScript compilado y minificado ->
+	< script   src = " view / frontend / js / jquery-3.3.1.min.js " > </ script >
+	<! - <script src = "view / frontend / js / materialize.min.js"> </script> ->
+  < script  src = " https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js " > </ script >
+	< script >
+		$ ( documento ). listo ( función () {
+      $ ( ' .sidenav ' ). sidenav ();
+      $ ( ' .materialboxed ' ). caja de material ();
+      $ ( ' .parallax ' ). paralaje ();
+      $ ( ' .tabs ' ). pestañas ();
+      $ ( ' .datepicker ' ). selector de fecha ({
+        deshabilitar fines de semana :  verdadero ,
+        yearRange :  1   });
+      $ ( ' .tooltipped ' ). información sobre herramientas ();
+      $ ( ' .scrollspy ' ). scrollSpy ();
+	    	// $ ('. carrusel'). carrusel ();
+	    	// $ ('. tap-target'). tapTarget ();
+	  	});
+	</ script >
+
+      
+	
+</ cuerpo >
+</ html >
